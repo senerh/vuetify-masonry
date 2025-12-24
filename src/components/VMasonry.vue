@@ -95,7 +95,7 @@ const columns = computed(() => {
             :index="itemIndex"
             :columnIndex="colIndex"
           >
-            define a slot named "item" to render items
+            please define a slot named "item" to render items
           </slot>
         </div>
       </v-col>
