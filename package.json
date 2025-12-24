@@ -15,6 +15,10 @@
   "files": [
     "dist"
   ],
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/senerh/vuetify-masonry.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
