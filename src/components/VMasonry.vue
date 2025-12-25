@@ -94,7 +94,13 @@ const columns = computed(() => {
           :index="itemIndex"
           :columnIndex="colIndex"
         >
-          Please define a slot named "item" to render items
+          Please provide an item slot – see the
+          <a
+            href="https://github.com/senerh/vuetify-masonry?tab=readme-ov-file#slot-api"
+            target="_blank"
+            rel="noopener"
+            >documentation</a
+          >.
         </slot>
       </div>
     </v-col>
