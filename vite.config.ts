@@ -21,7 +21,8 @@ export default defineConfig({
         exports: 'named',
         globals: {
           vue: 'Vue',
-          vuetify: 'Vuetify'
+          vuetify: 'Vuetify',
+          'vuetify/components': 'Vuetify'
         }
       }
     }
