@@ -5,7 +5,7 @@ const installable = {
   ...VMasonry,
   install(app: App) {
     app.component('VMasonry', VMasonry)
-  }
+  },
 }
 
 export { VMasonry }
