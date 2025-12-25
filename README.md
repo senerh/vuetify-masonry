@@ -16,33 +16,10 @@ Peer dependencies: Vue 3 and Vuetify 3 (see `package.json`).
 
 ## Usage
 
-You can install the library globally as a plugin or import the component locally.
-
-- Global (registers the plugin):
-
-```js
-import { createApp } from 'vue'
-import App from './App.vue'
-import { createVuetify } from 'vuetify'
-import VuetifyMasonry from 'vuetify-masonry'
-
-const app = createApp(App)
-app.use(createVuetify())
-app.use(VuetifyMasonry) // registers <VMasonry>
-app.mount('#app')
-```
-
-
-- Local import (no global registration required):
-
-The package exports a default installable plugin and a named `VMasonry` component. Import the named export to register the component locally in a view or component without calling `app.use`.
+Import the component locally when you need it:
 
 ```js
 import { VMasonry } from 'vuetify-masonry'
-
-export default {
-  components: { VMasonry },
-}
 ```
 
 ## Props
@@ -65,14 +42,14 @@ Example:
 
 ```vue
 <template>
-  <VMasonry :items="cards" :md="3">
+  <v-masonry :items="cards" col="3">
     <template #item="{ item }">
       <v-card>
         <v-card-title>{{ item.title }}</v-card-title>
         <v-card-text>{{ item.description }}</v-card-text>
       </v-card>
     </template>
-  </VMasonry>
+  </v-masonry>
 </template>
 
 <script setup>
