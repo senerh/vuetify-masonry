@@ -1,6 +1,6 @@
 # vuetify-masonry
 
-Lightweight Vue 3 component that provides a responsive masonry-style grid built on Vuetify 3 layout primitives (`VContainer`, `VRow`, `VCol`). Use it to render lists of variable-height items in evenly balanced columns.
+Lightweight Vue 3 component that provides a responsive masonry-style grid built on Vuetify 3 layout primitives (`VRow`, `VCol`). Use it to render lists of variable-height items in evenly balanced columns.
 
 ## Installation
 
@@ -66,7 +66,7 @@ const cards = [
 
 ## Notes
 
-- The component implementation lives in `src/components/VMasonry.vue` and relies on Vuetify's `VContainer`, `VRow`, and `VCol` for layout.
+- The component implementation lives in `src/components/VMasonry.vue` and relies on Vuetify's `VRow` and `VCol` for layout.
 - Column distribution places items round-robin into columns: `columns[index % nbColumns]`.
 - This package targets Vue 3 + Vuetify 3 (see `peerDependencies` in `package.json`).
 

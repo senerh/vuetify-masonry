@@ -1,7 +1,7 @@
 <script lang="ts" setup generic="T">
 import { computed, type ComputedRef } from 'vue'
 import { useDisplay } from 'vuetify'
-import { VRow, VCol, VContainer } from 'vuetify/components'
+import { VRow, VCol } from 'vuetify/components'
 
 export type NbMasonryColumns = 1 | 2 | 3 | 4 | 6 | 12
 export type ColProp = NbMasonryColumns | `${NbMasonryColumns}`
@@ -77,28 +77,26 @@ const columns = computed(() => {
 </script>
 
 <template>
-  <v-container class="pt-6">
-    <v-row>
-      <v-col
-        v-for="(column, colIndex) in columns"
-        :key="colIndex"
-        :cols="12 / nbColumns"
+  <v-row>
+    <v-col
+      v-for="(column, colIndex) in columns"
+      :key="colIndex"
+      :cols="12 / nbColumns"
+    >
+      <div
+        v-for="(item, itemIndex) in column"
+        :key="itemIndex"
+        :class="{ 'mb-6': itemIndex !== column.length - 1 }"
       >
-        <div
-          v-for="(item, itemIndex) in column"
-          :key="itemIndex"
-          :class="{ 'mb-6': itemIndex !== column.length - 1 }"
+        <slot
+          name="item"
+          :item="item"
+          :index="itemIndex"
+          :columnIndex="colIndex"
         >
-          <slot
-            name="item"
-            :item="item"
-            :index="itemIndex"
-            :columnIndex="colIndex"
-          >
-            Please define a slot named "item" to render items
-          </slot>
-        </div>
-      </v-col>
-    </v-row>
-  </v-container>
+          Please define a slot named "item" to render items
+        </slot>
+      </div>
+    </v-col>
+  </v-row>
 </template>
