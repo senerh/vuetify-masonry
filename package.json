@@ -5,7 +5,6 @@
   "main": "dist/vuetify-masonry.umd.js",
   "module": "dist/vuetify-masonry.mjs",
   "exports": {
-    "./package.json": "./package.json",
     ".": {
       "types": "./dist/types/index.d.ts",
       "import": "./dist/vuetify-masonry.mjs",
@@ -24,7 +23,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "prepare": "npm run build",
     "lint": "eslint . --ext .ts,.vue",
     "release": "semantic-release"
   },
