@@ -1,0 +1,47 @@
+{
+  "name": "vuetify-masonry",
+  "version": "0.0.6",
+  "description": "A simple Vuetify-compatible masonry grid Vue 3 component",
+  "main": "dist/vuetify-masonry.umd.js",
+  "module": "dist/vuetify-masonry.mjs",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/vuetify-masonry.mjs",
+      "require": "./dist/vuetify-masonry.umd.js",
+      "default": "./dist/vuetify-masonry.mjs"
+    }
+  },
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senerh/vuetify-masonry.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "prepublishOnly": "npm run build",
+    "build": "vite build",
+    "lint": "eslint . --fix",
+    "format": "prettier --write src/",
+    "release": "semantic-release"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0",
+    "vuetify": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.3",
+    "conventional-changelog-conventionalcommits": "^9.1.0",
+    "eslint": "^9.13.0",
+    "eslint-plugin-vue": "^9.29.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.0.0",
+    "vite": "^7.3.0",
+    "vite-plugin-dts": "^4.5.4",
+    "vue": "^3.2.0",
+    "vuetify": "^3.0.0"
+  }
+}
