@@ -2,6 +2,21 @@
   "name": "vuetify-masonry",
   "version": "0.0.0-development",
   "description": "Lightweight Vue 3 component for responsive masonry-style grids built on Vuetify 3 primitives",
+  "keywords": [
+    "vue",
+    "vue3",
+    "vuetify",
+    "vuetify3",
+    "masonry",
+    "masonry-layout",
+    "masonry-grid",
+    "grid",
+    "responsive",
+    "layout",
+    "component",
+    "typescript",
+    "vite"
+  ],
   "main": "dist/vuetify-masonry.umd.js",
   "module": "dist/vuetify-masonry.mjs",
   "exports": {
