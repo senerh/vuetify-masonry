@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/senerh/vuetify-masonry.git"
+    "url": "git+https://github.com/senerh/vuetify-masonry.git"
   },
   "scripts": {
     "dev": "vite",
