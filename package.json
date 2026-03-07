@@ -1,12 +1,12 @@
 {
   "name": "vuetify-masonry",
   "version": "0.0.0-development",
-  "description": "Lightweight Vue 3 component for responsive masonry-style grids built on Vuetify 3 primitives",
+  "description": "Lightweight Vue 3 component for responsive masonry-style grids built on Vuetify 4 primitives",
   "keywords": [
     "vue",
     "vue3",
     "vuetify",
-    "vuetify3",
+    "vuetify4",
     "masonry",
     "masonry-layout",
     "masonry-grid",
